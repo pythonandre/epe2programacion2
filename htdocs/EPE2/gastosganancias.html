@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registro</title>
+<link href="style2.css" rel="stylesheet" type="text/css">
+</head>
+	<body>
+	<!--- Direcciones para navegar la página --->
+		<a href="registro.html">Registro</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="gastosganancias.html">Gastos y ganancias</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="productos.html">Productos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="mail.html">Contacto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<hr>
+	<!--- Mostrar datos--->
+	<div class="main-page">
+		 <div class="form">
+    <form action="gastos.php" method='post'>
+	 <button type="submit">Mostrar Gastos</button>
+	 </form>
+	 </div>
+	
+	<!--- Sección de edición de datos--->
+  <div class="form">
+    <form action="insertgasto.php" method='post'>
+		<p>Añadir Gasto.</p>
+      <input type="text" placeholder="item" name="item"/>
+      <input type="text" placeholder="descripción" name ="descripcion"/>
+      <input type="text" placeholder="previsto" name="previsto"/>
+      <input type="text" placeholder="real" name = "real"/>
+      <input type="text" placeholder="difer" name="difer"/>
+      <button>Añadir</button>
+      <p>Remover Gasto:</p>
+    </form>
+	   <form action="eliminargasto.php" method='post'>
+      <input type="text" placeholder="item" name="item"/>
+      <button>Remover</button>
+    </form>
+  </div>
+	<!--- Mostrar datos--->
+	<div class="form">
+    <form action="ganancias.php" method='post'>
+	 <button type="submit">Mostrar Ganancias</button>
+	 </form>
+	 </div>
+	 <!--- Sección de edición de datos--->
+  <div class="form">
+    <form action="insertganancia.php" method='post'>
+		<p>Añadir Ganancias</p>
+      <input type="text" placeholder="item" name="item"/>
+      <input type="text" placeholder="descripción" name ="descripcion"/>
+      <input type="text" placeholder="previsto" name="previsto"/>
+      <input type="text" placeholder="real" name = "real"/>
+      <input type="text" placeholder="difer" name="difer"/>
+      <button>Añadir</button>
+      <p>Remover Ganancia</p>
+    </form>
+	   <form action="eliminarganancia.php" method='post'>
+      <input type="text" placeholder="item" name="item"/>
+      <button>Remover</button>
+    </form>
+  </div>
+	
+</div>
+</body>
+</html>
+

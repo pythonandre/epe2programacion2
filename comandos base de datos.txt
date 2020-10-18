@@ -1,0 +1,18 @@
+create database epe2;
+use epe2;
+create table user (username varchar(50), password varchar(50), mail varchar(50));
+create table ganancia (item int, descripcion varchar(50), previsto int, reala int, difer int);
+create table gasto (item int, descripcion varchar(50), previsto int, reala int, difer int);
+create table productos (codigo int, fabricante varchar(50), categoria varchar(50), precio int);
+insert into gasto (item, descripcion, previsto, reala, difer) values (1, "Pago de internet", 37, 37, 0); 
+insert into gasto (item, descripcion, previsto, reala, difer) values (2, "Pago de energía", 50, 45, 5); 
+insert into gasto (item, descripcion, previsto, reala, difer) values (3, "Alimentación", 100, 125, -25); 
+insert into gasto (item, descripcion, previsto, reala, difer) values (4, "Bonos", 35, 50, -15);
+insert into ganancia (item, descripcion, previsto, reala, difer) values (1, "Salario", 500, 500, 0); 
+insert into ganancia (item, descripcion, previsto, reala, difer) values (2, "Comisiones por venta", 50, 50, 5); 
+insert into ganancia (item, descripcion, previsto, reala, difer) values (3, "Intereses bancarios", 100, 152, 52); 
+insert into ganancia (item, descripcion, previsto, reala, difer) values (4, "Ganancias Google ads", 50, 350, 350); 
+insert into productos (codigo, fabricante, categoria, precio) values (1, 'juan', 'Equipo', 2000);
+insert into productos (codigo, fabricante, categoria, precio) values (2, 'antonio', 'Repuesto', 2000);
+insert into productos (codigo, fabricante, categoria, precio) values (3, 'pepe', 'Equipo', 2000);
+insert into productos (codigo, fabricante, categoria, precio) values (4, 'david', 'Repuesto', 2000);

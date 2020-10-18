@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registro</title>
+<link href="style1.css" rel="stylesheet" type="text/css">
+</head>
+<!--- Direcciones para navegar la página --->
+	<a href="registro.html">Registro</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="gastosganancias.html">Gastos y ganancias</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="productos.html">Productos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="mail.html">Contacto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<hr>
+	<!--- Crear una cuenta --->
+    <div class="form">
+    <form method="post" action="insert.php">
+		<p>Crea una cuenta:</p>
+      <input type="text" placeholder="username" name ="username"/>
+      <input type="password" placeholder="contraseña" name ="password"/>
+      <input type="text" placeholder="email" name="email"/>
+      <button type="submit">Crear</button>
+    </form>
+	</div>
+	<!--- Iniciando sesión--->
+  <div class="form" id="loginform">
+    <form action="checklogin.php" method='post' id='login'>
+		<p>¿Ya registrado? Inicia sesión:</p>
+      <input type="text" name="username" placeholder="username"/>
+      <input type="password"  name="password"placeholder="contraseña"/>
+	  <button type="submit">Login</button>
+    </form>
+ </div>
+ <!--- Modificando datos--->
+  <div class="form">
+	  <form method="post" action="modificar.php">
+	<p>Modifica la contraseña y el mail de una cuenta existente.</p>
+      <input type="text" placeholder="username" name="username"/>
+      <input type="password" placeholder="contraseña nueva" name="password"/>
+      <input type="text" placeholder="email nuevo" name="email"/>
+	  <button type="submit">Modificar</button>
+    </form>
+ </div>
+ <!--- Muestra los datos--->
+     <div class="form">
+	 <form method="post" action="mostrar.php">
+	  <p>Muestra los datos de las cuentas existentes:</p>
+	  <button type="submit">Mostrar datos</button>
+	  </form>
+	</div>
+</div>
+<body>
+</body>
+</html>

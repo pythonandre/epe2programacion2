@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registro</title>
+<link href="style1.css" rel="stylesheet" type="text/css">
+</head>
+	<body>
+	<!--- Direcciones para navegar la página --->
+	<a href="registro.html">Registro</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="gastosganancias.html">Gastos y ganancias</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="productos.html">Productos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="mail.html">Contacto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<hr>
+	<!--- Ingresando datos para enviar mail --->
+    <div class="form">
+    <form method="POST" action="mail.php">
+		<p>Contacto:</p>
+		<input type="text" placeholder="Ingrese su nombre: " name = "name">
+      <input type="text" placeholder="Ingrese su asunto: " name = "subject">
+      <input type="text" placeholder="Escriba su mensaje: " name = "message">
+      <button type="submit" name="send">Enviar</button>
+    </form>
+	</div>
+</div>
+</body>
+</html>
